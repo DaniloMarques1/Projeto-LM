@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P|Quicksand|Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="banner">
+        <img src="https://img.icons8.com/color/104/000000/python.png">
+        <p>learn</p>
+        <p>.py</p>
+        <div class="searchbar">
+            <input type="text" name="cpf">
+            <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <div id="all">
+                <div class="list">
+                    <ul class="menu"> 
+                        <li class="item"><a href="#">Introdução</a></li>
+                        <li class="item"><a href="#decision">Estruturas de Decisão</a></li>
+                        <li class="item"><a href="#repeat">Estruturas de Repetição</a></li>
+                        <li class="item"><a href="#vetores">Vetores</a></li>
+                        <li class="item"><a href="#">Matrizes</a></li>
+                        <li class="item"><a href="#">Strings</a></li>
+                        <li class="item"><a href="#">Arquivos de Texto</a></li>
+                        <li class="item"><a href="#">Funções</a></li>
+                    </ul>    
+                </div>
+
+        <div class="content">
+
+            <!--Introdução-->
+
+            <div id="introduction_id">
+                <h1>Introdução à Python</h1>
+                <h2>O que é Python ?</h2>
+                <p>Python é uma popular linguagem de programação. Ela foi criada em 1991 por Guido van Rossum.</p>
+                <p>Ela é muito usada para:</p>
+                <ul>
+                    <li>Desenvolvimento web ;</li>
+                    <li>Desenvolvimento de software ;</li>
+                    <li>Matemática ;</li>
+                    <li>Scripts de sistema .</li>
+                </ul>
+
+                <h2>O que pode ser feito com Python ?</h2>
+                <ul>
+                    <li>Python pode ser usado num servidor para criar aplicações web ;</li>
+                    <li>Python poder ser usado juntamente com softwares para criar fluxos de trabalho ;</li>
+                    <li>Python pode ser conectado a sistemas de base de dados.Sendo também capaz de ler e modificar
+                        arquivos ;</li>
+                    <li>Python pode ser usado para manipular big data e executar cálculos matemáticos complexos ;</li>
+                    <li>Python pode ser usado para prototipagem rápida,ou para desenvolvimento de softwares
+                        "production-ready".</li>
+                </ul>
+
+                <h2>Instalação</h2>
+                <p>Muitos computadores e Macs já possuem python instalado .</p>
+                <p>Para verificar se você já possui python instalado num sistema operacional Windows, pesquise na barra de
+                    inicializar por Python .</p>
+                <p>Caso você use linux ou Mac,no linux abra a linha de comando e no Mac abra o Terminal e digite :</p>
+                <div class="border">
+                    <p>python --version</p>
+                </div>
+                <p>Caso não possua python instalado no seu computador,é possível baixá-lo gratuitamente no site oficial :</p>
+                <p><a href="https://www.python.org/" target="_blank">https://www.python.org/</a></p>
+
+                <h2>Conceitos Básicos</h2>
+                <h3>Variáveis :</h3>
+                <ul>
+                    <li>Possuem um identificador(normalmente uma letra) ;</li>
+                    <li>Deve ser obrigatoriamente declarada ;</li>
+                    <li>Possuem 4 tipos básicos: int,float,str e bool .</li>
+                </ul>
+                <div class="code">
+                    <pre><code> <span>vint = 4</span> <span>vfloat = 5.4</span> <span>vstr = "Python"</span> <span>vbool = True</span> </code></pre>
+                </div>
+
+                <h3>Operadores Aritméticos :</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Descrição</th>
+                            <th>Exemplo</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>+</td>
+                            <td>Soma</td>
+                            <td>2 + 2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtração</td>
+                            <td>2 - 2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplicação</td>
+                            <td>2 * 2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Divisão</td>
+                            <td>2 / 2</td>
+                            <td>1.0</td>
+                        </tr>
+                        <tr>
+                            <td>//</td>
+                            <td>Divisão Inteira</td>
+                            <td>5 // 2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Resto da Divisão</td>
+                            <td>2 % 2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>Potência</td>
+                            <td>2 ** 2</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Operadores Relacionais :</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Descrição</th>
+                            <th>Exemplo</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>></td>
+                            <td>Maior</td>
+                            <td>2 > 2</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <</td> <td>Menor que
+                            </td>
+                            <td>2 < 2</td> <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>Maior igual que</td>
+                            <td>2 >= 2</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <=</td> <td>Menor igual que
+                            </td>
+                            <td>2 <= 2</td> <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Diferente</td>
+                            <td>2 != 2</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Igual</td>
+                            <td>2 == 2</td>
+                            <td>True</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Operadores Lógicos :</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Descrição</th>
+                            <th>Exemplo</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>and</td>
+                            <td>E</td>
+                            <td>2 == 2 and 4 == 4</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>or</td>
+                            <td>Ou</td>
+                            <td>2 == 2 or 4 == 6</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>not</td>
+                            <td>Não</td>
+                            <td>not(2) == 2</td>
+                            <td>False</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Entrada e Saída :</h3>
+                <ul>
+                    <li>Entrada
+                        <ul>
+                            <li>input ;</li>
+                            <li>Sempre retorna "str" (string) .</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Saída
+                        <ul>
+                            <li>print .</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="code">
+                    <pre><code> <span>nome = input('informe um nome: ')</span> <span>print('Nome =', nome)</span> </code></pre>
+                </div>
+
+                <h3>Funções de Identificação e Conversão de Tipos :</h3>
+                <ul>
+                    <li>Identificando um tipo
+                        <ul>
+                            <li>type(< valor ou variável>)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Funções de Conversão
+                        <ul>
+                            <li>int( )</li>
+                            <li>float( )</li>
+                            <li>str( )</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Exemplos de Programas :</h3>
+                <p>Obs : a # serve para fazer comentários no código, assim como aspas triplas .</p>
+                <div class="code space">
+                    <pre><code> <span>#Dobro de um número</span> <span>n = int(input('Digite um nº: '))</span> <span>d = n * 2</span> <span>print(d)</span> </code></pre>
+                </div>
+                <div class="code space">
+                    <pre><code> <span>#Cálculo de média aritmética</span> <span>x = float(input('Digite um nº: '))</span> <span>y = float(input('Digite um nº: '))</span> <span>res = (x + y) / 2</span> <span>print(res)</span> </code></pre>
+                </div>
+                <div class="code space">
+                    <pre><code> <span>#Potenciação de um valor por outro</span> <span>x = int(input('Digite um nº: '))</span> <span>y = int(input('Digite um nº: '))</span> <span>res = x ** y</span> <span>print(res)</span> </code></pre>
+                </div>
+                <p class="topo"><a href="#">Voltar ao Menu</a></p>
+            
+            </div>
+
+            <!--Estruturas de Decisão-->
+
+            <div id="decision_id">
+                <h1 id="decision">Estruturas de Decisão</h1>
+                <p>Na programação, estruturas de decisão são utilizadas quando é necessária a escolha de um grupo de ações e estruturas que só devem ser executadas quando determinadas condições são ou não satisfeitas . Essa escolha determina o fluxo que o programa irá seguir .</p>
+                <p>Como exemplos de situações onde é necessário o uso de tais estruturas podem ser citadas ocasiões onde temos de verificar se um aluno passou por média ou se um número é primo .</p>
+                <h2>Como Funciona ?</h2>
+                
+                <ul>
+                    <li>Analisa uma determinada condição ;</li>
+                    <li>O resultado da análise sempre será : True(verdadeiro) ou False(falso) ;</li>
+                    <li>Os operadores relacionais(+, -, = etc) são utilizados para montar uma condição ;</li>
+                    <li>A condição pode ser simples ou composta ;</li>
+                    <li>Os operadores and, or e not são utilizados .</li>
+                </ul>
+                
+                <h3>and</h3>
+                <table class="operators">
+                    <tr>
+                        <th>C1</th>
+                        <th>C2</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <th>V</th>
+                        <th>V</th>
+                        <th>V</th>
+                    </tr>
+                    <tr><th>V</th>
+                        <th>F</th>
+                        <th>F</th>
+                    </tr>
+                    <tr><th>F</th>
+                        <th>V</th>
+                        <th>F</th>
+                    </tr>
+                    <tr><th>F</th>
+                        <th>F</th>
+                        <th>F</th>
+                    </tr>
+                </table>
+                
+                <h3>or</h3>
+                <table class="operators">
+                    <tr>
+                        <th>C1</th>
+                        <th>C2</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <th>V</th>
+                        <th>V</th>
+                        <th>V</th>
+                    </tr>
+                    <tr>
+                        <th>V</th>
+                        <th>F</th>
+                        <th>V</th>        
+                    </tr>
+                    <tr>
+                        <th>F</th>
+                        <th>V</th>
+                        <th>V</th>            
+                    </tr>
+                    <tr>
+                        <th>F</th>
+                        <th>F</th>
+                        <th>F</th>            
+                    </tr>
+                </table>
+
+                <h3>not</h3>
+                <table class="operators">
+                    <tr>
+                        <th>A</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <th>V</th>
+                        <th>F</th>
+                    </tr>
+                    <tr>
+                        <th>F</th>
+                        <th>V</th>
+                    </tr>
+                </table>
+
+                <h3>Exemplo :</h3>
+                <table class="operators">
+                    <tr>
+                        <th>Condição</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <th>2 > 3</th>
+                        <th>False</th>
+                    </tr>
+                    <tr>
+                        <th>'a > 'A'</th>
+                        <th>True</th>
+                    </tr>
+                    <tr>
+                        <th>('joana' > 'maria')and(10 < 20)</th>
+                        <th>False</th>
+                    </tr>
+                </table>
+
+                <h2>Sintaxe</h2>
+                <h3>Exemplos :</h3>
+                <p>if</p>
+                <div class="code">
+                        <pre><code> <span>if(condição):</span> <span class="ident">comandos</span> </code></pre>
+                </div>        
+                <div class="code space">
+                    <pre><code> <span>'''Exemplo'''</span> <span>if(nota >= 7):</span> <span class='ident'>print('aprovado')</span> </code></pre>
+                </div>
+                <p>A parte do código que deve ser executada apenas se a condição for atendida deve estar identado corretamente como no exemplo acima .</p>
+                <p>if-else</p>
+                <div class="code">
+                    <pre><code> <span>if(condição):</span> <span class="ident">comandos</span> <span>else:</span> <span class="ident">comandos</span> </code></pre>
+                </div>
+                <div class="code space">
+                    <pre><code> <span>if(nota >= 7):</span> <span class="ident">print('aprovado')</span> <span>else:</span> <span class="ident">print('reprovado')</span> </code></pre>
+                </div>
+                <p>if-else-if...</p>
+                <div class="code">
+                    <pre><code> <span>if(condição):</span> <span class="ident">comandos</span> <span>else:</span> <span class="ident">if(condição):</span> <span class="ident2">comandos</span> <span class="ident">else:</span> <span class="ident2">comandos</span> </code></pre>
+                </div>
+                <div class="code space">
+                    <pre><code> <span>if(nota >= 7):</span> <span class="ident">print("aprovado")</span> <span>else:</span> <span class="ident">if(nota >= 4):</span> <span class="ident2">print("final")</span> <span class="ident">else:</span> <span class="ident2">print("reprovado")</span> </code></pre>
+                </div>
+                <p>if-elif-else</p>
+                <div class="code">
+                    <pre><code> <span>if(condição):</span> <span class="ident">comandos</span> <span>elif:</span> <span class="ident">comandos</span> <span>else:</span> <span class="ident">comandos</span> </code></pre>
+                </div>
+                <div class="code space">
+                    <pre><code> <span>if(nota >= 7):</span> <span class="ident">print("aprovado")</span> <span>elif(nota >= 4):</span> <span class="ident">print("final")</span> <span>else:</span> <span class="ident">print("reprovado")</span> </code></pre>
+                </div>
+                <p class="topo"><a href="#">Voltar ao Menu</a></p>
+            </div>    
+                
+            <!--Estruturas de repetição-->
+
+            <div id="repetition_id">
+                <h1 id="repeat">Estruturas de Repetição</h1>
+                <p>Na programação muitas vezes é necessária a iteração(repetição) de um ou mais comandos. Para isso podem ser usadas as chamadas estruturas de repetição.</p>
+                <p>Como exemplo, podem ser citadas situações onde devemos exibir uma determinada palavra várias vezes ou até mesmo fazer a leitura de 100 números. Sem o uso de repetições seriam necessários diversos inputs no mesmo código. Tornando algumas tarefas até mesmo inviáveis.</p>
+                <h2>Como funciona ?</h2>
+                <p>De forma geral, a repetição de comandos ocorre considerando :</p>
+                <ul>            
+                <li>Uma contagem pré-estabelecida de iterações, ou seja, quando se sabe o número de repetições ;</li>
+                <li>A ocorrência de uma determinada condição, sendo o número de repetições desconhecido ;</li>
+                </ul>
+                <p>As linguagens de programação normalmente suportam os chamados laços de repetição(loops), que são estruturas que permitem executar repetidas vezes uma sequência de comandos .</p>
+                <p>Para criar tais laços em python, fazemos uso dos comandos for e while .</p>
+                <h2>Sintaxe</h2>
+                <p>Tradicionalmente, em diversas linguagens de programação o comando for permite executar instruções num número fixo de vezes .</p>
+                <p>Em python, o comando for permite percorrer itens de uma coleção e assim implementar a repetiçao para um número fixo de vezes .</p>
+                <h4>for</h4>
+                <div class="code">
+                    <pre><code> <span>for variável in coleção:</span> <span class="ident">comandos</span> <span>else:</span> <span class="ident">comandos</span> </code></pre>
+                </div>
+                <p>range( )</p>
+                <p>A função range( ) é frequentemente utilizada com o comando for para controle das iterações. Ela retorna uma série numérica no intervalo enviado como argumento da função .</p>
+                <ul>
+                    <li>range(start, stop, step)</li>
+                    <ul>
+                        <li>start - início da sequência</li>
+                        <li>stop - último elemento da sequência(obrigatório)</li>
+                        <li>step - intervalo entre os elementos</li>
+                    </ul>
+                </ul>
+                <h3>Exemplos</h3>
+                <h4>for</h4>
+                <div class="code space">
+                        <pre><code> <span>#Sequência númerica de 0 a 3</span> <span>for i in range(4):</span> <span class="ident">print(i)</span>  </code></pre>
+                </div>
+                <div class="code space">
+                        <pre><code> <span>0</span> <span>1</span> <span>2</span> <span>3</span> </code></pre>
+                </div>
+                <p>Usando o step :</p>
+                <div class="code space">
+                        <pre><code> <span>#Sequência númerica de 0 a 3 com step 1</span> <span>for i in range(0, 4, 1):</span> <span class="ident">print(i)</span>  </code></pre>
+                </div>
+                <div class="code space">
+                        <pre><code> <span>0</span> <span>1</span> <span>2</span> <span>3</span> </code></pre>
+                </div>
+                <p>Step negativo :</p>
+                <div class="code space">
+                        <pre><code> <span>#Sequência númerica de 4 a 1 com step -1</span> <span>for i in range(4, 0, -1):</span> <span class="ident">print(i)</span>  </code></pre>
+                </div>
+                <div class="code space">
+                        <pre><code> <span>4</span> <span>3</span> <span>2</span> <span>1</span> </code></pre>
+                </div>
+                <p>Saltando de 2 em 2 números :</p>
+                <div class="code space">
+                        <pre><code> <span>#Sequência de 2 a 10 com step 2</span> <span>for i in range(2, 11, 2):</span> <span class="ident">print(i)</span> </code></pre>
+                </div>
+                <div class="code space">
+                        <pre><code> <span>2</span> <span>4</span> <span>6</span> <span>8</span> <span>10</span> </code></pre>
+                </div>
+                <h4>while</h4>
+                <p>O while executa uma sequência de comandos de acordo com uma condição pré-estabelecida .</p>
+                <div class="code space">
+                        <pre><code> <span>while condição:</span> <span class="ident">comandos</span> <span>else:</span> <span class="ident">comandos</span> </code></pre>
+                </div>
+                <p>Programa que solicite do usuário vários números até que seja informado o número 0. Sempre que o usuário informar um número o programa deverá mostrar o dobro desse número .</p>
+                <div class="code space">
+                        <pre><code> <span>n = int(input("Digite um número: "))</span> <span>while(n != 0):</span> <span class="ident">print("O dobro de", n, "=", 2*n)</span> <span class="ident">n=int(input("Informe um número: "))</span> <span>else:</span> <span class="ident">print("O usuário digitou zero")</span> <span>print("O programa terminou !")</span> </code></pre>
+                </div>
+                <p>Resultado :</p>
+                <div class="code space">
+                        <pre><code> <span>Digite um número: 2</span> <span>O dobro de 2 == 4</span> <span>Digite um número: 4</span> <span>O dobro de 4 = 8</span> <span>Digite um número: 0</span> <span>O usuário digitou zero</span> <span>O programa terminou !</span> </code></pre>
+                </div>
+                <p class="topo"><a href="#">Voltar ao Menu</a></p>
+            </div> 
+
+            <!--Vetores-->
+
+            <div id="vector">
+                <h1 id="vetores">Vetores</h1>
+                <p>Em diversas situações é necessário armazenar um grande volume de informações, o que torna impraticável a declaração de variáveis suficientes para armazenar esse grande volume .</p>
+                <ul>
+                    <li>Por exemplo :</li>
+                    <ul>
+                        <li>Armazenar os nomes de 30 pessoas ;</li>
+                        <li>Armazenar a descrição de 1000 produtos ;</li>
+                        <li>Armazenar a idade de 1.000.000 de pessoas ;</li>
+                    </ul>
+                </ul>
+                <p>Supondo que queremos ler 20 números inteiros, calcular e exibir a média dos números lidos. Se quiséssemos saber quais dos números lidos estavam acima da média, precisaríamos declarar 20 varíaveis ?</p>
+                <p>Felizmente com o uso de vetores podemos definir uma estrutura de dados para o armazenamento de vários valores, como no exemplo abaixo :</p>
+                <div class="code space">
+                        <pre><code> <span>vetor = ["a", "b", "c", "d", "e"]</span> </code></pre>
+                </div>
+                <p>No exemplo acima temos um vetor formado por 5 elementos, onde cada um é referenciado por um índice começando do 0. Ou seja "a" possui índice 0, "b" possui índice 1 e assim sucessivamente .</p>
+                <p>Os índices de um vetor nos permitem individualizar um elemento, o encontrando com mais facilidade .</p>
+                <h2>Como funciona ?</h2>
+                <p>Por definição vetor é um tipo especial de funcionalidade que permite armazenar vários valores ao mesmo tempo. Eles podem ser declarados através das função list( ), ou através do uso de [ ], ambos sendo guardados numa variável .</p>
+                <h3>Declaração</h3>
+                <div class="code">
+                    <pre><code> <span>lista0 = [] #Lista vazia </span> <span>lista1 = [1] #Lista com um elemento</span> <span>lista2 = [1,2] #Lista com dois elementos</span> <span>lista3 = list()</span> <span>lista4 = list(range(2, 11, 2))</span> <span></span> <span># len - função para calcular a quantidade de</span> <span># elementos contidos na lista</span> <span></span> <span>print("%s - %d" %(lista0, len(lista0)))</span> <span>print("%s - %d" %(lista1, len(lista1)))</span> <span>print("%s - %d" %(lista2, len(lista2)))</span> <span>print("%s - %d" %(lista3, len(lista3)))</span> <span>print("%s - %d" %(lista4, len(lista4)))</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[] - 0</span> <span>[1] - 1</span> <span>[1, 2] - 2</span> <span>[] - 0</span> <span>[2, 4, 6, 8, 10] - 5</span> </code></pre>
+                </div>
+                <h3>Manipulação de Vetores</h3>
+                <h4>[ ]</h4>
+                <p>O [ ] pode ser usado para acessar os elementos da lista através do índice.</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 40]</span> <span>print(lista)</span> <span>print(lista[0])</span> <span>print(lista[2:])</span> <span>print(lista[:2])</span> <span>print(lista[1:3])</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20, 30, 40]</span> <span>10</span> <span>[30, 40]</span> <span>[10, 20]</span> <span>[20, 30]</span> </code></pre>
+                </div>
+                <h4>insert</h4>
+                <p>Adiciona elemento na lista, informando a posição e o elemento.</p>
+                <div class="code">
+                    <pre><code> <span>lista = []</span> <span></span> <span>lista.insert(0, 10)</span> <span>lista.insert(0, 20)</span> <span>lista.insert(0, 30)</span> <span>lista.insert(0, 40)</span> <span></span> <span>print(lista)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[40, 30, 20, 10]</span> </code></pre>
+                </div>
+                <h4>append</h4>
+                <p>Adiciona um elemento no final da lista .</p>
+                <div class="code">
+                    <pre><code> <span>lista = []</span> <span></span> <span>lista.append(10)</span> <span>lista.append(20)</span> <span>lista.append(30)</span> <span>lista.append(40)</span> <span></span> <span>print(lista)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20, 30, 40]</span> </code></pre>
+                </div>    
+                <h4>extend</h4>
+                <p>Adiciona o(s) elemento(s) de uma lista no final de outra lista .</p>
+                <div class="code">
+                    <pre><code> <span>lista1 = [10 ,20]</span> <span>lista2 = [30, 40]</span> <span></span> <span>print(lista1)</span> <span>print(lista2)</span> <span>lista1.extend(lista2)</span> <span>print(lista1)</span> <span>print(list2)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20]</span> <span>[30, 40]</span> <span>[10, 20, 30, 40]</span> <span>[30, 40]</span> </code></pre>
+                </div>
+                <h4>+=</h4>
+                <p>O += concatena listas .</p>
+                <div class="code">
+                    <pre><code> <span>lista1 = [10, 20]</span> <span>lista2 = [30, 40]</span> <span></span> <span>print(lista1)</span> <span>print(lista2)</span> <span>lista1 += lista2</span> <span>print(lista1)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20]</span> <span>[30, 40]</span> <span>[10, 20, 30, 40]</span> </code></pre>
+                </div>
+                <h4>del</h4>
+                <p>Remove determinado(s) elemento(s) da lista .</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 40]</span> <span>del(lista[2:])</span> <span>print(lista)</span> <span></span> <span>lista = [10, 20, 30, 40]</span> <span>del(lista[:2])</span> <span>print(lista)</span> <span></span> <span>lista = [10, 20, 30, 40]</span> <span>del(lista[1:3])</span> <span>print(lista)</span> <span></span> <span>lista = [10, 20, 30, 40]</span> <span>del(lista[2])</span> <span>print(lista)</span>  </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20]</span> <span>[30, 40]</span> <span>[10, 40]</span> <span>[10, 20, 40]</span> </code></pre>
+                </div>
+                <h4>remove</h4>
+                <p>Remove determinado elemento da lista informando qual elemento deve ser eliminado .</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 10, 20, 20]</span> <span>print(lista)</span> <span>lista.remove(20)</span> <span>print(lista)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 10, 20, 20]</span> <span>[10, 10, 20]</span> </code></pre>
+                </div>
+                <h4>pop</h4>
+                <p>Remove o último elemento da lista, aquele que possui o maior índice .</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 40]</span> <span>print(lista.pop())</span> <span>print(lista.pop())</span> <span>print(lista.pop())</span> <span>print(lista.pop())</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>40</span> <span>30</span> <span>20</span> <span>10</span> </code></pre>
+                </div>
+                <h4>clear</h4>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 40]</span> <span></span> <span>print(lista)</span> <span>lista.clear() </span> <span>print(lista)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 40]</span> <span>[]</span> </code></pre>
+                </div>
+                <h4>count</h4>
+                <p>Retorna a quantidade de determinado elemento na lista .</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 30, 40]</span> <span>print(lista)</span> <span>print(lista.count(10))</span> <span>print(lista.count(30))</span> <span>print(lista.count(50))</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20, 30, 30, 40]</span> <span>1</span> <span>2</span> <span>0</span> </code></pre>
+                </div>
+                <h4>index</h4>
+                <p>Verifica se um elemento está contido na lista. Retorna o index, se encontrado .</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 40]</span> <span>print(lista)</span> <span>print(lista.index(10))</span> <span>print(lista.index(20))</span> <span>print(lista.index(30))</span> <span>print(lista.index(40))</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20, 30, 40]</span> <span>0</span> <span>1</span> <span>2</span> <span>3</span> </code></pre>
+                </div>
+                <h4>reverse</h4>
+                <p>Inverte a ordem dos elementos na lista .</p>
+                <div class="code">
+                    <pre><code> <span>lista = [10, 20, 30, 40]</span> <span></span> <span>print(lista)</span> <span>lista.reverse()</span> <span>print(lista)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>[10, 20, 30, 40]</span> <span>[40, 30, 20, 10]</span> </code></pre>
+                </div>
+                <h4>sort</h4>
+                <p>Ordena os elementos da lista em ordem crescente .</p>
+                <div class="code">
+                    <pre><code> <span>lista = [20, 40, 10, 30]</span> <span></span> <span>print(lista)</span> <span>lista.sort()</span> <span>print(lista)</span> </code></pre>
+                </div>
+                <p>Resultado</p>
+                <div class="code">
+                    <pre><code> <span>lista = [20, 40, 10, 30]</span> <span>[10, 20, 30, 40]</span> </code></pre>
+                </div>
+                <p class="topo"><a href="#">Voltar ao Menu</a></p>
+
+                </div>
+
+
+            </div>
+                
+
+
+
+            
+
+
+
+
+                
+
+
+    
+   
+    
+
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
